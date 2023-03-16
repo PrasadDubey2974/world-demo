@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="world-demo-api-test-suite.xml" />
+	<munit:test name="world-demo-api-test-suite-world-demo-apiFlowTest" doc:id="f18b92e2-e5d1-4c20-a644-6b6657d9fdb1" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow Reference" doc:id="012f934e-2624-403f-bd2c-0550279589ef" name="world-demo-api-test-suiteFlow"/>
+			<flow-ref doc:name="Flow-ref to world-demo-apiFlow" doc:id="2f9f1aaf-4733-4645-a8e9-e1fd3ece8cfc" name="world-demo-apiFlow"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="7b65e476-8d28-4e99-9b14-93b798fd9a35" message="Payload is null" expression="#[payload]" is="#[MunitTools::notNullValue()]"/>
+		</munit:validation>
+	</munit:test>
+	<flow name="world-demo-api-test-suiteFlow" doc:id="d6a2a73c-2ed4-4151-ad0d-61cf439e0797" >
+		<munit:set-event doc:name="Set Event" doc:id="96c11d3a-c9c9-418c-b684-ef5d03514128">
+				<munit:attributes value="#[{uriParams:{region:'Asia',city:'Kolkata'}}]" />
+				<munit:attributes value="#[{uriParams:{region:'Asia',city:'Kolkata'}}]" />
+				<munit:attributes value="#[{uriParams:{region:'Asia',city:'Kolkata'}}]" />
+				<munit:attributes value="#[{uriParams:{region:'Asia',city:'Kolkata'}}]" />
+				<munit:attributes value="#[{uriParams:{region:'Asia',city:'Kolkata'}}]" />
+				<munit:attributes value="#[{uriParams:{region:'Asia',city:'Kolkata'}}]" />
+				<munit:attributes value="#[{uriParams:{region:'Asia',city:'Kolkata'}}]" />
+				<munit:attributes value="#[{uriParams:{region:'Asia',city:'Kolkata'}}]" />
+				<munit:attributes value="#[{uriParams:{region:'Asia',city:'Kolkata'}}]" />
+			</munit:set-event>
+	</flow>
+	<munit:test name="world-demo-api-test-suite-world-demo-apiFlowTest1" doc:id="750fd10d-4a35-4c8f-a7fd-68818caef13e" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow Reference" doc:id="43f4905c-a634-4b07-9903-ceda1cb4abbf" name="world-demo-api-test-suiteFlow"/>
+			<flow-ref doc:name="Flow-ref to world-demo-apiFlow" doc:id="71e3ccd7-dcb2-4657-bf62-e7cf6ae903aa" name="world-demo-apiFlow"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="6f83cd8a-5468-4d73-a260-ca3f76946b3a" is="#[MunitTools::withMediaType('application/xml')]" expression="#[payload]" message="Media Type is incorrect"/>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="world-demo-api-test-suite-world-demo-apiFlowTest2" doc:id="5e6f58f4-3024-40bd-aa8c-9803f511d622" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow Reference" doc:id="068487ca-3fb7-45fb-adfb-275779b99571" name="world-demo-api-test-suiteFlow"/>
+			<flow-ref doc:name="Flow-ref to world-demo-apiFlow" doc:id="d5a6bf20-e7f7-4058-8d0f-16413a69a006" name="world-demo-apiFlow"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="72017302-ffca-4bd8-95bf-a63e2af98bd0" is="#[MunitTools::equalTo(false)]" expression="#[payload.dst]" message="DST value is not correct"/>
+		</munit:validation>
+	</munit:test>
+
+
+</mule>
