@@ -73,6 +73,7 @@
 							<workers>${workers}</workers>
 							<workerType>${workerType}</workerType>
 						</cloudHubDeployment>
+						<classifier>mule-application</classifier>
 				</configuration>
 			</plugin>
 		</plugins>
