@@ -55,8 +55,6 @@
 							<format>html</format>
 						</formats>
 					</coverage>
-				</configuration>
-				<configuration>
 					<cloudHubDeployment>
 						<username>Prasad2974</username>
 						<environment>Sandbox</environment>
