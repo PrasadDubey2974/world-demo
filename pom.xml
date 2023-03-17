@@ -61,11 +61,6 @@
 						<applicationName>world-time-zone-service</applicationName>
 						<environment>Sandbox</environment>
 						<workers>1</workers>
-						<region>us-east-1</region>
-						<workerType>Micro</workerType>
-						<properties>
-							<http.port>8081</http.port>
-						</properties>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
