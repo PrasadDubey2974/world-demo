@@ -65,6 +65,9 @@
 						<workers>1</workers>
 						<region>us-east-1</region>
 						<workerType>Micro</workerType>
+						<properties>
+							<http.port>8082</http.port>
+						</properties>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
