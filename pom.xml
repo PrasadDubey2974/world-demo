@@ -53,6 +53,7 @@
 						</formats>
 					</coverage>
 					
+					
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.4.0</muleVersion>
