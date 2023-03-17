@@ -54,10 +54,7 @@
 						</goals>
 					</execution>
 				</executions>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>3.4.2</version>
-				<extensions>true</extensions>
+
 				<configuration>
 					<coverage>
 						<runCoverage>true</runCoverage>
@@ -65,18 +62,20 @@
 							<format>html</format>
 						</formats>
 					</coverage>
-					
-					    <cloudHubDeployment>
-							<uri>https://anypoint.mulesoft.com</uri>
-							<muleVersion>${mule.version}</muleVersion>
-							<username>${anypoint.username}</username>
-							<password>${anypoint.password}</password>
-							<applicationName>${appname}</applicationName>
-							<environment>${environment}</environment>
-							<workers>${workers}</workers>
-							<workerType>${workerType}</workerType>
-						</cloudHubDeployment>
-						<classifier>mule-application</classifier>
+				</configuration>
+			</plugin>
+			</plugin>
+				<configuration>
+					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>${mule.version}</muleVersion>
+						<username>${anypoint.username}</username>
+						<password>${anypoint.password}</password>
+						<applicationName>${appname}</applicationName>
+						<environment>${environment}</environment>
+						<workers>${workers}</workers>
+						<workerType>${workerType}</workerType>
+					</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
