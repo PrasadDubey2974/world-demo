@@ -9,17 +9,7 @@
 
 	<name>world-demo-api</name>
 	
-	<configuration>
-	<cloudHubDeployment>
-	<username>Prasad2974</username>
-	<environment>Sandbox</environment>
-	<workers>1</workers>
-	<workerType>Micro</workerType>
-	<applicationName>World time zone service</applicationName>
-	<password>Mulesoft@8086</password>
-	<muleVersion>4.1.4</muleVersion>
-	</cloudHubDeployment>
-	</configuration>
+	
 	
 
 	<properties>
@@ -65,6 +55,17 @@
 							<format>html</format>
 						</formats>
 					</coverage>
+				</configuration>
+				<configuration>
+					<cloudHubDeployment>
+						<username>Prasad2974</username>
+						<environment>Sandbox</environment>
+						<workers>1</workers>
+						<workerType>Micro</workerType>
+						<applicationName>World time zone service</applicationName>
+						<password>Mulesoft@8086</password>
+						<muleVersion>4.1.4</muleVersion>
+					</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
