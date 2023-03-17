@@ -78,8 +78,6 @@
 						<applicationName>${appname}</applicationName>
 						<environment>${environment}</environment>
 						<workers>${workers}</workers>
-						<workerType>${workerType}</workerType>
-						<businessGroup>${business.group.name}</businessGroup>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
