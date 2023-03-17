@@ -54,7 +54,7 @@
 					</coverage>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>4.0.0</muleVersion>
+						<muleVersion>4.4.0</muleVersion>
 						<username>Prasad2974</username>
 						<password>Mulesoft@8086</password>
 						<applicationName>World time zone service</applicationName>
