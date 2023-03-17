@@ -64,7 +64,7 @@
 					</coverage>
 				</configuration>
 			</plugin>
-			</plugin>
+			<plugin>
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
