@@ -56,13 +56,15 @@
 						</formats>
 					</coverage>
 					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>4.0.0</muleVersion>
 						<username>Prasad2974</username>
+						<password>Mulesoft@8086</password>
+						<applicationName>World time zone service</applicationName>
 						<environment>Sandbox</environment>
 						<workers>1</workers>
+						<region>us-east-1</region>
 						<workerType>Micro</workerType>
-						<applicationName>World time zone service</applicationName>
-						<password>Mulesoft@8086</password>
-						<muleVersion>4.0.0</muleVersion>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
