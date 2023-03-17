@@ -8,9 +8,6 @@
 	<packaging>mule-application</packaging>
 
 	<name>world-demo-api</name>
-	
-	
-	
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -49,6 +46,12 @@
 					</execution>
 				</executions>
 				<configuration>
+					<coverage>
+						<runCoverage>true</runCoverage>
+						<formats>
+							<format>html</format>
+						</formats>
+					</coverage>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.0.0</muleVersion>
@@ -60,7 +63,7 @@
 						<region>us-east-1</region>
 						<workerType>Micro</workerType>
 						<properties>
-							<http.port>8082</http.port>
+							<http.port>8081</http.port>
 						</properties>
 					</cloudHubDeployment>
 				</configuration>
