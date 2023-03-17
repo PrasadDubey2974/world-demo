@@ -29,7 +29,6 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>3.3.5</version>
 				<extensions>true</extensions>
-				
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -55,6 +54,10 @@
 						</goals>
 					</execution>
 				</executions>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>3.4.2</version>
+				<extensions>true</extensions>
 				<configuration>
 					<coverage>
 						<runCoverage>true</runCoverage>
