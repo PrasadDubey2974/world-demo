@@ -62,7 +62,7 @@
 						<workerType>Micro</workerType>
 						<applicationName>World time zone service</applicationName>
 						<password>Mulesoft@8086</password>
-						<muleVersion>4.1.4</muleVersion>
+						<muleVersion>4.0.0</muleVersion>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
