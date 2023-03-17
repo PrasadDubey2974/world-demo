@@ -58,7 +58,7 @@
 						<muleVersion>4.4.0</muleVersion>
 						<username>Prasad2974</username>
 						<password>Mulesoft@8086</password>
-						<applicationName>World time zone service</applicationName>
+						<applicationName>world time zone service</applicationName>
 						<environment>Sandbox</environment>
 						<workers>1</workers>
 						<region>us-east-1</region>
